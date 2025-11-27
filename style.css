@@ -47,7 +47,7 @@
 #workspaces button.active {
   padding-left: 5.5px;
   padding-right: 8px;
-  background-color: alpha(@foreground, 0.2); /* Gold Background */
+  background-color: alpha(@foreground, 0.1); /* Gold Background */
   min-width: 25px;
 }
 
