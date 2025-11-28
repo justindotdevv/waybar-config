@@ -4,12 +4,11 @@
   color: @foreground;
   border: none;
   min-height: 0;
-  font-family: "CaskaydiaMono Nerd Font";
+  font-family: 'CaskaydiaMono Nerd Font';
   font-weight: 600;
   font-size: 13px;
 }
 
-/* Apply border-radius only to module containers */
 .modules-left>*,
 .modules-right>*,
 .modules-center>* {
@@ -24,12 +23,7 @@
   margin-right: 8px;
 }
 
-/* -----------------------------------------------------
- * WORKSPACES: Elastic Pill Animation
- * ----------------------------------------------------- */
-
 #workspaces button {
-  /* Removed 'all: initial' to allow transitions */
   padding: 0 5px;
   min-width: 9px;
 
@@ -42,7 +36,6 @@
   transition: all 0.19s ease;
 }
 
-/* The Active "Stretched" Pill */
 #workspaces button.active {
   padding-left: 5.5px;
   padding-right: 7.8px;
@@ -72,10 +65,6 @@
   background: none;
 }
 
-/* -----------------------------------------------------
- * WINDOW & BAR
- * ----------------------------------------------------- */
-
 window#waybar {
   background-color: rgba(10, 10, 10, 0.01);
   border-radius: 8px;
@@ -94,15 +83,8 @@ window#waybar {
 }
 
 #bluetooth,
-#network,
-#custom-omarchy {
-  margin-right: 8px;
-}
 
 #custom-screenrecording-indicator,
-#window {
-  margin-left: 5px;
-}
 
 
 #tray {
@@ -114,7 +96,6 @@ window#waybar {
   margin-right: 6px;
 }
 
-tooltip,
 tooltip {
   padding: 10px;
   border: 1.5px solid rgba(255, 255, 255, 0.1);
@@ -142,10 +123,6 @@ tooltip {
   color: #a55555;
 }
 
-#custom-weather {
-  margin-left: 8px;
-  margin-right: 8px;
-}
 
 #custom-pacman-updates {
   color: cornflowerblue;
@@ -153,9 +130,6 @@ tooltip {
   margin-left: 8px;
 }
 
-/* -----------------------------------------------------
- * BATTERY MODULE
- * ----------------------------------------------------- */
 
 #battery {
   margin: 0;
@@ -171,9 +145,6 @@ tooltip {
 
 #battery.critical:not(.charging) {
   color: #f38ba8;
-  animation-name: blink;
-  animation-duration: 0.5s;
-  animation-iteration-count: infinite;
 }
 
 
@@ -181,9 +152,6 @@ tooltip {
   color: #a6e3a1;
 }
 
-#custom-omarchy {
-  color: lightblue;
-}
 
 #network {
   color: @foreground;
