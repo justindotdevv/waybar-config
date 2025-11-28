@@ -50,6 +50,11 @@
   min-width: 25px;
 }
 
+#workspaces button.active:hover {
+  background-color: @foreground;
+}
+
+
 #workspaces button.active * {
   font-size: 16px;
   color: black;
