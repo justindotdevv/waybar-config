@@ -36,7 +36,7 @@ echo $$ >"$PID_FILE"
 # Set trap to run cleanup on exit or termination
 trap cleanup EXIT TERM INT
 
-bar=" ▂▃▄▅▆▇█"
+bar="⠀⡀⣀⣄⣤⣦⣶⣷⣿"
 dict="s/;//g;"
 
 # creating "dictionary" to replace char with bar
