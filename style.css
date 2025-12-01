@@ -39,13 +39,10 @@
 #workspaces button.active {
   padding-left: 5.5px;
   padding-right: 7.8px;
-  background-color: alpha(@foreground, 0.9);
+  background-color: @foreground;
   min-width: 25px;
 }
 
-#workspaces button.active:hover {
-  background-color: @foreground;
-}
 
 
 #workspaces button.active * {
@@ -55,15 +52,19 @@
 
 #workspaces button * {
   font-size: 15px;
+  margin-right: 1.5;
 }
 
 #workspaces button.empty {
   opacity: 0.5;
 }
 
-#workspaces button:hover {
-  background: none;
+
+#workspaces button:hover * {
+  color: black;
 }
+
+
 
 window#waybar {
   background-color: alpha(@background, 0.9);
@@ -96,9 +97,9 @@ window#waybar {
   margin-right: 6px;
 }
 
-tooltip {
+#tooltip {
   padding: 10px;
-  border: 1.5px solid rgba(255, 255, 255, 0.1);
+  border: 1.5px solid rgba(255, 255, 255, 1);
   border-radius: 10px;
   font-size: 12px;
   font-weight: 600;
