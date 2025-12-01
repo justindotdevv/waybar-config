@@ -36,7 +36,8 @@ echo $$ >"$PID_FILE"
 # Set trap to run cleanup on exit or termination
 trap cleanup EXIT TERM INT
 
-bar=" ▂▃▄▅▆▇█"
+# Original bars: bar=" ▂▃▄▅▆▇█"
+bar="⠀⡀⣀⣄⣤⣦⣶⣷⣿"
 dict="s/;//g;"
 
 # creating "dictionary" to replace char with bar
@@ -50,13 +51,13 @@ done
 config_file="/tmp/polybar_cava_config"
 echo "
 [general]
-bars = 4
+bars = 6
 
 [output]
 method = raw
 raw_target = /dev/stdout
 data_format = ascii
-ascii_max_range = 5
+ascii_max_range = 7
 " >$config_file
 
 # Start waybar monitoring as independent process
