@@ -6,9 +6,10 @@
   "spacing": 0,
   "width": 500,
   "height": 28,
-  "modules-left": ["hyprland/workspaces", "custom/cava"],
-  "modules-center": [
+  "modules-center": ["hyprland/workspaces" ],
+  "modules-left": [
     "clock",
+    "custom/cava",
     "custom/update",
     "custom/screenrecording-indicator",
   ],
