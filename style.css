@@ -43,9 +43,6 @@
   min-width: 25px;
 }
 
-#workspaces button.active:hover {
-  background-color: @foreground;
-}
 
 
 #workspaces button.active * {
@@ -61,9 +58,6 @@
   opacity: 0.5;
 }
 
-#workspaces button:hover {
-  background: none;
-}
 
 window#waybar {
   background-color: alpha(@background, 0.9);
