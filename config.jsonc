@@ -2,18 +2,26 @@
   "reload_style_on_change": true,
   "layer": "bottom",
   "margin-top": 5,
+  "margin-bottom": 0,
   "position": "top",
   "spacing": 0,
   "width": 500,
   "height": 28,
-  "modules-center": ["hyprland/workspaces" ],
+  "modules-center": [
+    "hyprland/workspaces"
+  ],
   "modules-left": [
     "clock",
     "custom/cava",
     "custom/update",
     "custom/screenrecording-indicator",
   ],
-  "modules-right": ["group/tray-expander", "network", "pulseaudio", "battery"],
+  "modules-right": [
+    "group/tray-expander",
+    "network",
+    "pulseaudio",
+    "battery"
+  ],
   "hyprland/workspaces": {
     "on-click": "activate",
     "format": "{icon}",
@@ -35,10 +43,9 @@
     },
     "persistent-workspaces": {},
   },
-  
   "custom/cava": {
-        "format": "{}",
-        "exec": "~/.config/waybar/cava.sh"
+    "format": "{}",
+    "exec": "~/.config/waybar/cava.sh"
   },
   "custom/update": {
     "format": "",
@@ -70,7 +77,13 @@
     "on-click-right": "~/.local/share/omarchy/bin/omarchy-launch-floating-terminal-with-presentation omarchy-tz-select",
   },
   "network": {
-    "format-icons": ["󰤯", "󰤟", "󰤢", "󰤥", "󰤨"],
+    "format-icons": [
+      "󰤯",
+      "󰤟",
+      "󰤢",
+      "󰤥",
+      "󰤨"
+    ],
     "format": "{icon}",
     "format-wifi": "{icon}",
     "format-ethernet": "󰀂",
@@ -85,11 +98,33 @@
   "battery": {
     "format": "{capacity}% {time} {icon}",
     "format-discharging": "{icon}",
-    "format-charging": "{icon} ",    
+    "format-charging": "{icon} ",
     "format-plugged": "",
     "format-icons": {
-      "charging": ["", "", "", "", "", "", "", "", "", ""],
-      "default": ["", "", "", "", "", "", "", "", "", ""],
+      "charging": [
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "default": [
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
     },
     "format-full": "", // Updated to horizontal full
     "tooltip-format-discharging": "{power:>1.0f}W↓ {capacity}% {time} ",
@@ -117,7 +152,11 @@
     "scroll-step": 5,
     "format-muted": "",
     "format-icons": {
-      "default": ["", "", ""],
+      "default": [
+        "",
+        "",
+        ""
+      ],
     },
   },
   "custom/screenrecording-indicator": {
@@ -132,7 +171,10 @@
       "transition-duration": 600,
       "children-class": "tray-group-item",
     },
-    "modules": ["custom/expand-icon", "tray"],
+    "modules": [
+      "custom/expand-icon",
+      "tray"
+    ],
   },
   "custom/expand-icon": {
     "format": "",
