@@ -66,9 +66,9 @@
 }
 
 window#waybar {
-  background-color: alpha(@background, 0.8);
+  background-color: alpha(@background, 0.9);
   border-radius: 8px;
-  border: 1.5px solid alpha(@foreground, 0.1);
+  /* border: 1.5px solid alpha(@foreground, 0.1); */
 }
 
 #custom-update {
