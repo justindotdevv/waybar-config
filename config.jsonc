@@ -86,7 +86,7 @@
         "format": "{icon}",
         "format-wifi": "{icon}",
         "format-ethernet": "󰀂",
-        "format-disconnected": "󰤮",
+        "format-disconnected": "󱚵",
         "tooltip-format-wifi": "{essid} ({frequency} GHz)\n⇣{bandwidthDownBytes}  ⇡{bandwidthUpBytes}",
         "tooltip-format-ethernet": "⇣{bandwidthDownBytes}  ⇡{bandwidthUpBytes}",
         "tooltip-format-disconnected": "Disconnected",
@@ -154,7 +154,9 @@
         "scroll-step": 5,
         "format-muted": "󰓄",
         "format-icons": {
-            "default": ["󰓃"],
+            "default": [
+                "󰓃"
+            ],
         },
     },
     "custom/screenrecording-indicator": {
