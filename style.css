@@ -80,7 +80,7 @@
 }
 
 window#waybar {
-  background-color: alpha(@background, 0.9);
+  background-color: alpha(@background, 0.95);
   border-radius: 8px;
 }
 
