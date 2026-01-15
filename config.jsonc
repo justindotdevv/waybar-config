@@ -131,7 +131,10 @@
         "interval": 5,
         "on-click": "omarchy-menu power",
         "states": {
-            "warning": 20,
+            "full": 100,
+            "good": 75,
+            "medium": 50,
+            "warning": 25,
             "critical": 10,
         },
     },

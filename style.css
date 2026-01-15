@@ -64,7 +64,7 @@
 
 #workspaces button * {
   font-size: 15px;
-  margin-right: 1.5;
+  margin-right: 1.5px;
 }
 
 #workspaces button.empty {
@@ -118,6 +118,7 @@ window#waybar {
 
 #clock {
   margin-left: 8px;
+  color: @accent-orange;
 }
 
 .hidden {
@@ -148,12 +149,28 @@ window#waybar {
   border-radius: 0;
 }
 
+#battery.full {
+  color: @accent-green;
+}
+
+#battery.good {
+  color: @accent-cyan;
+}
+
+#battery.medium {
+  color: @accent-blue;
+}
+
 #battery.warning {
   color: @accent-yellow;
 }
 
 #battery.critical:not(.charging) {
   color: @accent-red;
+}
+
+#battery.charging {
+  color: @accent-cyan;
 }
 
 #battery.plugged {
