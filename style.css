@@ -95,6 +95,14 @@ window#waybar {
   margin-right: 12px;
 }
 
+#pulseaudio.muted {
+  color: #878580;
+}
+
+#pulseaudio.bluetooth {
+  color: @accent-blue;
+}
+
 #bluetooth,
 #custom-screenrecording-indicator {
   margin-left: 8px;
