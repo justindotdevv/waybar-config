@@ -16,7 +16,6 @@
         "custom/screenrecording-indicator"
     ],
     "modules-right": [
-        "group/tray-expander",
         "network",
         "pulseaudio",
         "battery"
@@ -164,24 +163,5 @@
         "exec": "$OMARCHY_PATH/default/waybar/indicators/screen-recording.sh",
         "signal": 8,
         "return-type": "json",
-    },
-    "group/tray-expander": {
-        "orientation": "inherit",
-        "drawer": {
-            "transition-duration": 600,
-            "children-class": "tray-group-item",
-        },
-        "modules": [
-            "custom/expand-icon",
-            "tray"
-        ],
-    },
-    "custom/expand-icon": {
-        "format": "",
-        "tooltip": false,
-    },
-    "tray": {
-        "icon-size": 12,
-        "spacing": 17,
     },
 }
