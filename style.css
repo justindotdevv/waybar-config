@@ -185,6 +185,26 @@ window#waybar {
   margin-right: 15px;
 }
 
+#network.ethernet {
+  color: @accent-cyan;
+}
+
+#network.wifi {
+  color: @accent-green;
+}
+
+#network.disconnected {
+  color: @accent-red;
+}
+
+#network.linked {
+  color: @accent-yellow;
+}
+
+#network.disabled {
+  color: #878580;
+}
+
 #custom-cava {
   color: @foreground;
   padding-left: 10px;
