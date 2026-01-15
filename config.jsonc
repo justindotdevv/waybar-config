@@ -77,11 +77,11 @@
     },
     "network": {
         "format-icons": [
-            "󰤯",
-            "󰤟",
-            "󰤢",
-            "󰤥",
-            "󰤨"
+            "󱚵",
+            "󱚶",
+            "󱚷",
+            "󱚸",
+            "󱚹"
         ],
         "format": "{icon}",
         "format-wifi": "{icon}",
