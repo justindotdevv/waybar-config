@@ -1,4 +1,18 @@
-@import "../omarchy/current/theme/waybar.css";
+/* Flexoki Dark Theme */
+@define-color background #100F0F;
+@define-color background-alt #1C1B1A;
+@define-color foreground #CECDC3;
+@define-color ui-border #282726;
+
+/* Flexoki Accents (400 series for dark) */
+@define-color accent-red #D14D41;
+@define-color accent-orange #DA702C;
+@define-color accent-yellow #D0A215;
+@define-color accent-green #879A39;
+@define-color accent-cyan #3AA99F;
+@define-color accent-blue #4385BE;
+@define-color accent-purple #8B7EC8;
+@define-color accent-magenta #CE5D97;
 
 * {
   color: @foreground;
@@ -45,12 +59,12 @@
 
 #workspaces button.active * {
   font-size: 16px;
-  color: black;
+  color: @background;
 }
 
 #workspaces button * {
   font-size: 15px;
-  margin-right: 1.5;
+  margin-right: 1.5px;
 }
 
 #workspaces button.empty {
@@ -68,7 +82,6 @@
 window#waybar {
   background-color: alpha(@background, 0.9);
   border-radius: 8px;
-  /* border: 1.5px solid alpha(@foreground, 0.1); */
 }
 
 #custom-update {
@@ -79,31 +92,44 @@ window#waybar {
 
 #pulseaudio {
   color: @foreground;
-  margin-right: 17px;
+  margin-right: 12px;
+}
+
+#pulseaudio.muted {
+  color: #878580;
+}
+
+#pulseaudio.bluetooth {
+  color: @accent-blue;
 }
 
 #bluetooth,
-#custom-screenrecording-indicator,
-#tray {
+#custom-screenrecording-indicator {
   margin-left: 8px;
   margin-right: 8px;
 }
 
+#tray {
+  margin-right: 12px;
+}
+
 #custom-expand-icon {
-  margin-right: 6px;
+  margin-right: 10px;
 }
 
 #tooltip {
   padding: 10px;
-  border: 1.5px solid rgba(255, 255, 255, 1);
+  border: 1.5px solid @ui-border;
   border-radius: 10px;
   font-size: 12px;
   font-weight: 600;
-  background-color: rgba(15, 15, 15, 0.9);
+  background-color: alpha(@background-alt, 0.96);
+  color: @foreground;
 }
 
 #clock {
   margin-left: 8px;
+  color: @accent-orange;
 }
 
 .hidden {
@@ -117,39 +143,74 @@ window#waybar {
 }
 
 #custom-screenrecording-indicator.active {
-  color: #a55555;
+  color: @accent-red;
 }
 
 #custom-pacman-updates {
-  color: cornflowerblue;
+  color: @accent-blue;
   margin-right: 11px;
   margin-left: 8px;
 }
 
 #battery {
   margin: 0;
-  margin-right: 6px;
+  margin-right: 8px;
   color: @foreground;
   background: transparent;
   border-radius: 0;
 }
 
+#battery.full {
+  color: @accent-green;
+}
+
+#battery.good {
+  color: @accent-cyan;
+}
+
+#battery.medium {
+  color: @accent-blue;
+}
+
 #battery.warning {
-  color: #f9e2af;
+  color: @accent-yellow;
 }
 
 #battery.critical:not(.charging) {
-  color: #f38ba8;
+  color: @accent-red;
+}
+
+#battery.charging {
+  color: @accent-cyan;
 }
 
 #battery.plugged {
-  color: #a6e3a1;
+  color: @accent-green;
 }
 
 #network {
   color: @foreground;
   margin-right: 15px;
-  margin-left: 1px;
+}
+
+#network.ethernet {
+  color: @accent-cyan;
+}
+
+#network.wifi {
+  color: @accent-green;
+}
+
+#network.disconnected {
+  color: @accent-red;
+}
+
+#network.linked {
+  color: @accent-yellow;
+}
+
+#network.disabled {
+  color: #878580;
 }
 
 #custom-cava {
