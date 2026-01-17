@@ -85,7 +85,7 @@
         "format": "{icon}",
         "format-wifi": "{icon}",
         "format-ethernet": "󰀂",
-        "format-disconnected": "󰤮",
+        "format-disconnected": "󱚵",
         "tooltip-format-wifi": "{essid} ({frequency} GHz)\n⇣{bandwidthDownBytes}  ⇡{bandwidthUpBytes}",
         "tooltip-format-ethernet": "⇣{bandwidthDownBytes}  ⇡{bandwidthUpBytes}",
         "tooltip-format-disconnected": "Disconnected",
@@ -147,12 +147,13 @@
     },
     "pulseaudio": {
         "format": "{icon}",
-        "on-click": "omarchy-launch-or-focus-tui wiremix",
+        "on-click": "omarchy-launch-audio",
         "on-click-right": "pamixer -t",
         "tooltip-format": "Playing at {volume}%",
         "scroll-step": 5,
         "format-muted": "󰓄",
         "format-icons": {
+            "headphone": "",
             "default": [
                 "󰓃"
             ],

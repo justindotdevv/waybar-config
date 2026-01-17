@@ -140,6 +140,7 @@ window#waybar {
   margin-left: 14px;
   margin-right: 5px;
   font-size: 10px;
+  padding-bottom: 1px;
 }
 
 #custom-screenrecording-indicator.active {
@@ -217,4 +218,13 @@ window#waybar {
   color: @foreground;
   padding-left: 10px;
   margin-left: 0;
+}
+
+#custom-voxtype {
+  min-width: 12px;
+  margin: 0 0 0 7.5px;
+}
+
+#custom-voxtype.recording {
+  color: #a55555;
 }
