@@ -215,7 +215,7 @@ window#waybar {
 }
 
 #custom-cava {
-  color: @foreground;
+  color: @accent-yellow;
   padding-left: 10px;
   margin-left: 0;
 }

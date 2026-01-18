@@ -18,7 +18,8 @@
     "modules-right": [
         "network",
         "pulseaudio",
-        "battery"
+        "battery",
+        "custom/voxtype"
     ],
     "hyprland/workspaces": {
         "on-click": "activate",
@@ -40,6 +41,19 @@
             // "active": "󰅭",
         },
         "persistent-workspaces": {},
+    },
+    "custom/voxtype": {
+        "exec": "omarchy-voxtype-status",
+        "return-type": "json",
+        "format": "{icon}",
+        "format-icons": {
+            "idle": "",
+            "recording": "󰍬",
+            "transcribing": "󰔟"
+        },
+        "tooltip": true,
+        "on-click-right": "omarchy-voxtype-config",
+        "on-click": "omarchy-voxtype-model"
     },
     "custom/cava": {
         "format": "{}",
