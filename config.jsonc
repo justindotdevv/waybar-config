@@ -16,10 +16,10 @@
         "custom/screenrecording-indicator"
     ],
     "modules-right": [
+        "custom/voxtype",
         "network",
         "pulseaudio",
-        "battery",
-        "custom/voxtype"
+        "battery"
     ],
     "hyprland/workspaces": {
         "on-click": "activate",
@@ -47,6 +47,7 @@
         "return-type": "json",
         "format": "{icon}",
         "format-icons": {
+            "stopped": "",
             "idle": "",
             "recording": "󰍬",
             "transcribing": "󰔟"
