@@ -47,8 +47,8 @@
         "return-type": "json",
         "format": "{icon}",
         "format-icons": {
-            "stopped": "",
-            "idle": "",
+            "stopped": "󰍭",
+            "idle": "󰍬",
             "recording": "󰍬",
             "transcribing": "󰔟"
         },
