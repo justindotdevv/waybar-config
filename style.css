@@ -19,15 +19,14 @@
   border: none;
   min-height: 0;
   font-family: "CaskaydiaMono Nerd Font";
-  font-weight: 600;
-  font-size: 13px;
+  font-weight: 700;
+  font-size: 14px;
 }
 
-.modules-left > *,
-.modules-right > *,
-.modules-center > * {
-  border-radius: 15px;
-}
+/* .modules-left > *, */
+/* .modules-right > *, */
+/* .modules-center > * { */
+/* } */
 
 .modules-left {
   margin-left: 8px;
@@ -47,7 +46,7 @@
   color: transparent;
   border-radius: 6px;
 
-  transition: all 0.19s ease;
+  transition: all 0.2s ease;
 }
 
 #workspaces button.active {
@@ -80,7 +79,7 @@
 }
 
 window#waybar {
-  background-color: alpha(@background, 0.95);
+  background-color: alpha(@background, 0.5);
   border-radius: 8px;
 }
 
@@ -109,13 +108,13 @@ window#waybar {
   margin-right: 8px;
 }
 
-#tray {
-  margin-right: 12px;
-}
+/* #tray { */
+/*   margin-right: 12px; */
+/* } */
 
-#custom-expand-icon {
-  margin-right: 10px;
-}
+/* #custom-expand-icon { */
+/*   margin-right: 10px; */
+/* } */
 
 #tooltip {
   padding: 10px;
@@ -129,7 +128,7 @@ window#waybar {
 
 #clock {
   margin-left: 8px;
-  color: @accent-orange;
+  color: @foreground;
 }
 
 .hidden {
@@ -147,11 +146,11 @@ window#waybar {
   color: @accent-red;
 }
 
-#custom-pacman-updates {
-  color: @accent-blue;
-  margin-right: 11px;
-  margin-left: 8px;
-}
+/* #custom-pacman-updates { */
+/*   color: @accent-blue; */
+/*   margin-right: 11px; */
+/*   margin-left: 8px; */
+/* } */
 
 #battery {
   margin: 0;
@@ -215,7 +214,7 @@ window#waybar {
 }
 
 #custom-cava {
-  color: @accent-yellow;
+  color: @cava;
   padding-left: 10px;
   margin-left: 0;
 }
